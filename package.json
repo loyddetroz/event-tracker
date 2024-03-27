@@ -1,0 +1,31 @@
+{
+  "name": "event-tracker",
+  "version": "0.1.0",
+  "description": "Event Tracker demo using AWS.",
+  "main": "build/src/index.js",
+  "types": "build/src/index.d.ts",
+  "author": {
+    "name": "Loyd de Troz",
+    "email": "loyd.detroz.dev@gmail.com"
+  },
+  "files": [
+    "build/src"
+  ],
+  "license": "Apache-2.0",
+  "keywords": [],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "gts lint",
+    "clean": "gts clean",
+    "compile": "tsc",
+    "fix": "gts fix",
+    "prepare": "npm run compile",
+    "pretest": "npm run compile",
+    "posttest": "npm run lint"
+  },
+  "devDependencies": {
+    "gts": "^5.3.0",
+    "typescript": "~5.4.3",
+    "@types/node": "20.11.5"
+  }
+}
